@@ -1,42 +1,10 @@
-<div class="container mt-5">
-  <div class="row justify-content-center align-items-center">  
-    <img src="../assets/img/Safegold.svg" alt="" height="50">
+<div class="container">
+  <div class="row d-inline-flex">
+    <a href="https://safegold.com.br/">
+      <img src="../assets/img/Safegold.svg" alt="" class="float-left" height="75">
+    </a>
   </div>
-  <div class="row justify-content-center align-items-center g-2">
-    <div class="col">
-      <img
-        src="https://www.psdmockups.com/wp-content/uploads/2016/09/6-X-9-Book-with-eReader-Promo-PSD-Mockup.jpg" alt="" width="300">
-    </div>
-    <div class="col">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida est neque, non tempus nisi efficitur sed.
-      Ut eget nunc quis massa dapibus sollicitudin. Fusce quam tellus, sagittis quis odio ac, finibus cursus lacus. Sed
-      interdum ex urna, ac efficitur dolor faucibus ac. Nam cursus, nunc id porta suscipit, lorem nibh consectetur diam,
-      quis facilisis lectus risus ut elit. Etiam tempus ut ex non ultricies. Nunc vitae ornare dui. Duis tempus odio
-      nunc, at molestie est rutrum a. Aliquam viverra, magna vel porttitor eleifend, massa dui egestas velit, at
-      accumsan metus dui ut velit. Maecenas sit amet interdum arcu, vitae commodo enim. Pellentesque habitant morbi
-      tristique senectus et netus et malesuada fames ac turpis egestas. Nulla dapibus magna eu nibh viverra interdum.
-      Nullam dapibus ullamcorper ultricies. Nam quis lectus consequat, fringilla lectus eu, interdum erat. Sed lacus
-      arcu, viverra sed tincidunt eu, vestibulum vel sapien. Fusce sed nunc ut massa efficitur sagittis vitae eget erat.
-      Nunc ligula quam, semper ac euismod eget, placerat vehicula orci. Etiam elit urna, tincidunt dictum pharetra et,
-      fermentum eu nulla.
-    </div>
-    <div class="col">
-      <h3>Preencha o formulário abaixo para receber o nosso e-book gratuitamente</h3>
-      <form #formContato="ngForm">
-        <div class="form-group">
-          <label for="firstName">Seu primeiro nome*</label>
-          <input type="text" class="form-control" name="firstName" placeholder="nome" ngModel>
-        </div>
-        <div class="form-group">
-          <label for="lastName">Seu último nome*</label>
-          <input type="text" class="form-control" name="lastName" placeholder="sobrenome" ngModel>
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail*</label>
-          <input type="email" class="form-control" name="email" placeholder="email@dominio.com" ngModel>
-        </div>
-        <button type="submit" class="btn btn-primary my-2" (click)="SalvarForm(formContato.value)">Salvar</button>
-      </form>
-    </div>
+  <div class="row">
+    <router-outlet></router-outlet>
   </div>
 </div>

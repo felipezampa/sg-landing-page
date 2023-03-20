@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.sg-footer{
+    background: #323533;
+    width: 100%;
+    bottom: 0;
+}
+
+.sg-address{
+    color: #D9D9D9;
+    margin-bottom: 0;
+}
+
+.sg-icon{
+    background: #000000;
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px;
+}

@@ -10,7 +10,7 @@ import { Contato } from './contato.model';
 
 export class AppComponent {
   @ViewChild('formContato') formContato!: NgForm;
-  constructor(){}
+  constructor() { }
 
   SalvarForm(dataForm: Contato) {
     console.log(dataForm.firstName, dataForm.lastName, dataForm.email);

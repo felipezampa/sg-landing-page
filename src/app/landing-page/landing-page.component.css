@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+.sg-form {
+    width: 316px;
+    height: 540px;
+    background: #D9D9D9;
+    box-shadow: 16px 18px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    /* padding: 10px 15px; */
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top: 12%;
+    padding-bottom: 0%;
+}
+
+.sg-button {
+    background: #EDA900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    border: none;
+    padding: 7px 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.sg-button-lg{
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.sg-button:hover {
+    background: #414442;
+}
+
+.sg-check-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.sg-second-line{
+    margin-top: 5rem;
+}
+.sg-header-text{
+    font-size: 31px;
+}
+
+.sg-align-middle-vertical{
+    position: relative;
+    top: 25%;
+}

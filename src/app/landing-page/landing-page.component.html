@@ -1,0 +1,78 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col">
+        <img src="../assets/img/mockup.svg" alt="">
+    </div>
+    <div class="col me-5">
+        <h1>E-BOOK GRATUITO</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum dolor aliquet, luctus justo a,
+            fermentum enim. Maecenas ac interdum sem.
+        </p>
+        <p>
+            Duis mattis, purus at finibus facilisis, lorem sapien malesuada lacus, eu congue ipsum enim eu quam. In hac
+            habitasse platea dictumst. Integer vel est varius, finibus elit vestibulum, sodales sapien.
+        </p>
+    </div>
+    <div class="col">
+        <div class="sg-form">
+            <h2 class="text-center">Lorem ipsum dolor sit amet.</h2>
+            <form #formContato="ngForm">
+                <div class="form-group mt-4">
+                    <label for="email">E-mail*</label>
+                    <input type="email" class="form-control" name="email" placeholder="email@dominio.com" ngModel>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="firstName">Seu nome*</label>
+                    <input type="text" class="form-control" name="firstName" placeholder="Nome Completo" ngModel>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="lastName">Qual é o nicho da sua empresa?*</label>
+                    <input type="text" class="form-control" name="lastName" placeholder="Nicho da sua empresa" ngModel>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="lastName">Qual é o tamanho de sua empresa?*</label>
+                    <input type="text" class="form-control" name="lastName" placeholder="Valor" ngModel>
+                </div>
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="sg-check-label" for="flexCheckDefault">
+                        Quero receber as novidades e promoções da Safegold.Clicando em aceito, você concorda com a
+                        política de privacidade da Safegold*.
+                    </label>
+                </div>
+                <button type="submit" class="sg-button mt-3" (click)="SalvarForm(formContato.value)">Baixar
+                    Agora!</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row sg-second-line">
+    <div class="col px-5">
+        <div class="sg-align-middle-vertical">
+            <h1 class="sg-header-text">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum dolor aliquet, luctus justo a,
+                fermentum enim. Maecenas ac interdum sem.
+            </p>
+            <p>Duis mattis, purus at finibus facilisis, lorem sapien malesuada lacus,
+                eu congue ipsum enim eu quam. In hac habitasse platea dictumst. Integer vel est varius, finibus elit
+                vestibulum,
+                sodales sapien.
+            </p>
+            <p>Praesent consequat aliquam erat vitae egestas. Sed a posuere ipsum. Sed id velit sagittis, iaculis
+                lectus eu, fringilla nibh. Etiam imperdiet nibh cursus, cursus augue id, pellentesque est. Mauris eget magna
+                sed
+                metus tempus scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis
+                egestas.
+            </p>
+        </div>
+    </div>
+    <div class="col-5">
+        <img src="../assets/img/mockup.svg" alt="">
+    </div>
+</div>
+<div class="row justify-content-center align-items-center">
+    <button type="submit" class="sg-button sg-button-lg col-2 my-5" (click)="SalvarForm(formContato.value)">Baixar
+        Agora!</button>
+</div>
