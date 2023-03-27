@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
 }
 
-h1{
+h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -13,7 +14,7 @@ h1{
     line-height: 44px;
 }
 
-h2{
+h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -21,19 +22,71 @@ h2{
     line-height: 28px;
 }
 
-p{
+p {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 13px;
-line-height: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
 }
 
-#body{
-    margin-bottom:  17.5rem;
+#body {
+    padding-bottom: 17rem
 }
 
-@media screen {
+@media screen and (max-width: 770px) {
+    h1 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .left-container{
+        margin: 10px;
+    }
+
+    #body {
+        padding-bottom: 0rem;
+    }
 }
 
+@media screen and (max-height: 800px) {
+    #body {
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    #body {
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    #body {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    #body {
+        padding-bottom: 0rem;
+    }
+}

@@ -2,7 +2,7 @@
 
 .sg-form {
     width: 316px;
-    height: 540px;
+    height: 749px;
     background: #D9D9D9;
     box-shadow: 16px 18px 20px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
@@ -60,7 +60,7 @@ h1 {
 p {
     font-family: 'Inter';
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 h2 {
@@ -71,9 +71,9 @@ h2 {
     line-height: 22px;
 }
 
-input {
+input,select {
     border-radius: 10px;
-}
+} 
 
 .sg-second-line{
     margin-top: 5rem;
@@ -86,3 +86,9 @@ input {
     position: relative;
     top: 25%;
 }
+
+.sg-privacy{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
