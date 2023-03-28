@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Contato } from './contato.model';
+import { Contato } from './models/contato.model';
 
 @Component({
   selector: 'app-root',

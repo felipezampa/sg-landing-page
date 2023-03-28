@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Contato } from '../contato.model';
+import { Contato } from '../models/contato.model';
 
 @Component({
   selector: 'app-landing-page',
