@@ -24,7 +24,6 @@ html, body {
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-
 }
 
 .sg-icon {
@@ -57,17 +56,23 @@ html, body {
 #site:hover {
     background: #EDA900;
 }
-
+.sg-icons-row{
+    justify-content: end;
+}
 @media screen and (max-width: 770px) {
+    .sg-footer{
+        padding-bottom: 30px;
+    }
     .sg-icons-row {
-        text-align: center;
-        font-size: 23px;
+        justify-content: center;
+        align-items: center;
     }
 
-    img {
+    #footer-img {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
     }
 
     p {

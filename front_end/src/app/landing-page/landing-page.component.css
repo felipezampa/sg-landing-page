@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
 .sg-form {
-    width: 316px;
+    width: 320px;
     height: 749px;
     background: #D9D9D9;
     box-shadow: 16px 18px 20px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
     /* padding: 10px 15px; */
-    padding-right: 7%;
-    padding-left: 7%;
+    padding-right: 6%;
+    padding-left: 6%;
     padding-top: 12%;
     padding-bottom: 0%;
+    justify-content: end;
 }
 
 .sg-button {
@@ -32,12 +33,28 @@
     transition: 0.6s;
 }
 
-.sg-button-lg{
+.sg-button-lg {
     font-size: 20px;
     padding: 10px 30px;
+    background: #EDA900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
 }
 
 .sg-button:hover {
+    background: #414442;
+}
+.sg-button-lg:hover {
     background: #414442;
 }
 
@@ -61,6 +78,7 @@ p {
     font-family: 'Inter';
     font-weight: 300;
     font-size: 13px;
+    text-align: justify;
 }
 
 h2 {
@@ -71,24 +89,61 @@ h2 {
     line-height: 22px;
 }
 
-input,select {
+input,
+select {
     border-radius: 10px;
-} 
+}
 
-.sg-second-line{
+.sg-second-line {
     margin-top: 5rem;
 }
-.sg-header-text{
+
+.sg-header-text {
     font-size: 31px;
 }
 
-.sg-align-middle-vertical{
+.sg-align-middle-vertical {
     position: relative;
     top: 25%;
 }
 
-.sg-privacy{
+.sg-privacy {
     text-decoration: underline;
     cursor: pointer;
 }
 
+#filine-ficol {
+    margin-top: 5rem;
+}
+
+#filine-secol {
+    margin-top: 8rem;
+    padding-right: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .sg-button-lg{
+        justify-content: center;
+        align-items: center;
+    }
+    #filine-ficol {
+        margin: none;
+    }
+    #filine-secol {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-right: 0;
+        text-align: center;
+    }
+    .sg-form{
+        width: 360px;
+    }
+    .sg-second-line {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .sg-second-line img{
+        margin-top: 2.5rem;
+    }
+}
