@@ -32,13 +32,14 @@ CARGO_CHOICES = (
     ('Sócio ou Fundador','Sócio ou Fundador'),
 
 )
+
 class LandingPage(models.Model):
     nome = models.CharField(max_length=255, blank=True, null=True)
     email = models.CharField(max_length=255, blank=True, null=True)
     telefone = models.CharField(max_length=255, blank=True, null=True)
-    cargo = models.CharField(max_length=255, blank=True, null=True, choices=CARGO_CHOICES)
-    segmento_empresa = models.CharField(max_length=255, blank=True, null=True, choices=SEGMENTOS_CHOICES)
-    faturamento = models.CharField(max_length=255, blank=True, null=True, choices=FATURAMENTO_CHOICES)
+    cargo = models.CharField(max_length=255, blank=True, null=True)
+    segmento_empresa = models.CharField(max_length=255, blank=True, null=True)
+    faturamento = models.CharField(max_length=255, blank=True, null=True)
     #data_post = models.DateTimeField(auto_now_add=True)
     
 
