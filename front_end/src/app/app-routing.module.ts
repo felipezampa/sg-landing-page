@@ -5,14 +5,17 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'safegold-ebook', pathMatch: 'full'
+    path: '', redirectTo: 'ebook', pathMatch: 'full'
   },
   {
-    path: 'safegold-ebook', component: LandingPageComponent
+    path: 'ebook', component: LandingPageComponent
   },
   {
     path: 'obrigado', component: ThankYouComponent
   },
+  {
+    path: '**', redirectTo: 'ebook'
+  }
 ];
 
 @NgModule({

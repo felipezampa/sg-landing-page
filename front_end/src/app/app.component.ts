@@ -9,13 +9,8 @@ import { Contato } from './models/contato.model';
 })
 
 export class AppComponent {
-  @ViewChild('formContato') formContato!: NgForm;
+
   constructor() { }
 
-  SalvarForm(dataForm: Contato) {
-    console.log(dataForm.firstName, dataForm.lastName, dataForm.email);
-    this.formContato.resetForm();
-    alert("Um email foi enviado para: " + dataForm.email)
-  }
 
 }
