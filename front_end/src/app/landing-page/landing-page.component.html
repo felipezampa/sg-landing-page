@@ -21,15 +21,15 @@
                 <div class="form-group mt-4">
                     <label for="email">E-mail*</label>
                     <input type="email" class="form-control" name="email" id="inputFocus"
-                        placeholder="email@dominio.com" ngModel>
+                        placeholder="email@exemplo.com" ngModel required>
                 </div>
                 <div class="form-group mt-4">
                     <label for="nome">Seu nome*</label>
-                    <input type="text" class="form-control" name="nome" placeholder="Nome Completo" ngModel>
+                    <input type="text" class="form-control" name="nome" placeholder="Nome Completo" ngModel required> 
                 </div>
                 <div class="form-group mt-4">
                     <label for="telefone">Seu telefone*</label>
-                    <input type="text" class="form-control" name="telefone" placeholder="(00) 0 0000-0000" ngModel maxlength="11">
+                    <input type="text" class="form-control" name="telefone" placeholder="(00) 0 0000-0000" mask="(00) 0000-0000 || (00) 0 0000-0000" ngModel required>
                 </div>
                 <div class="form-group mt-4">
                     <label for="cargo">Seu cargo*</label>
@@ -56,11 +56,11 @@
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="sg-check-label" for="flexCheckDefault">
                         Quero receber as novidades e promoções da Safegold.Clicando em aceito, você concorda com a
-                        <a onclick="alert('Implementar issoaqui')" class="sg-privacy">política de privacidade</a> da
+                        <a onclick="privacidade()" class="sg-privacy">política de privacidade</a> da
                         Safegold*.
                     </label>
                 </div>
-                <button type="submit" class="sg-button mt-3" (click)="SalvarForm(formContato.value)">Baixar
+                <button type="submit" class="sg-button mt-3" (click)="SalvarForm(formContato.value)" [disabled]="!formContato.valid">Baixar
                     Agora!</button>
             </form>
         </div>

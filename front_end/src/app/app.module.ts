@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxMaskModule,} from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
-    
   ],
   bootstrap: [AppComponent]
 })

@@ -54,6 +54,9 @@
 .sg-button:hover {
     background: #414442;
 }
+.sg-button:disabled {
+    background: #edaa0091;
+}
 .sg-button-lg:hover {
     background: #414442;
 }
