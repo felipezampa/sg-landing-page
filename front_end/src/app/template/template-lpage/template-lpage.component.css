@@ -133,6 +133,10 @@ select {
     #filine-ficol {
         margin: none;
     }
+    img{
+        width: 22rem;
+        margin-right: 0
+    }
     #filine-secol {
         margin-top: 0;
         margin-bottom: 1rem;
@@ -148,5 +152,8 @@ select {
     }
     .sg-second-line img{
         margin-top: 2.5rem;
+    }
+    .sg-align-middle-vertical{
+        padding-bottom: 3rem;
     }
 }
