@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Contato } from '../models/contato.model';
-import { EmailService } from '../services/email.service';
+import { Contato } from '../../shared/models/contato.model';
+import { EmailService } from '../../shared/services/email.service';
 
 @Component({
   selector: 'app-landing-page',

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+p {
+    margin-top: 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+#body {
+    padding-bottom: 17rem
+}
+
+@media screen and (max-width: 770px) {
+    h1 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .left-container{
+        margin: 10px;
+    }
+
+    #body {
+        padding-bottom: 0rem;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #body {
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    #body {
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    #body {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    #body {
+        padding-bottom: 0rem;
+    }
+}
