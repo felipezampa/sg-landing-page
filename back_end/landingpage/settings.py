@@ -34,6 +34,12 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'eduardocordeiro1906@gmail.com'
 EMAIL_HOST_PASSWORD = 'fmvgshcxsltxphek'
 
+# EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_PORT =587
+# EMAIL_USE_TLS =True
+# EMAIL_HOST = 'smtp.office365.com'
+# EMAIL_HOST_USER ="eduardo@safegold.com.br"
+# EMAIL_HOST_PASSWORD ="suasenha"
 
 # Application definition
 
@@ -136,7 +142,7 @@ TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

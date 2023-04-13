@@ -40,7 +40,7 @@ class LandingPage(models.Model):
     cargo = models.CharField(max_length=255, blank=True, null=True)
     segmento_empresa = models.CharField(max_length=255, blank=True, null=True)
     faturamento = models.CharField(max_length=255, blank=True, null=True)
-    #data_post = models.DateTimeField(auto_now_add=True)
+    data_post = models.DateTimeField(auto_now_add=True)
     
 
 
