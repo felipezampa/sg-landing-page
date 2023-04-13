@@ -1,21 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ThankYouComponent } from './thank-you/thank-you.component';
+import { TemplateComponent, TemplateLPageComponent, TemplateThanksComponent } from './template';
 
 const routes: Routes = [
+  // {
+  //   path: '', redirectTo: 'template', pathMatch: 'full'
+  // },
+  // {
+  //   path: '**', redirectTo: 'template'
+  // },
   {
-    path: '', redirectTo: 'ebook', pathMatch: 'full'
+    path: 'template',
+    component: TemplateComponent, children: [
+      // { path: '', redirectTo: 'template/ebook'},
+      { path: 'ebook', component: TemplateLPageComponent },
+      { path: 'obrigado', component: TemplateThanksComponent }
+    ],
   },
-  {
-    path: 'ebook', component: LandingPageComponent
-  },
-  {
-    path: 'obrigado', component: ThankYouComponent
-  },
-  {
-    path: '**', redirectTo: 'ebook'
-  }
+  // {
+  //   path: 'agro',
+  //   component: TemplateComponent, children: [
+  //     // { path: '', redirectTo: 'template/ebook'},
+  //     { path: 'ebook', component: TemplateLPageComponent },
+  //     { path: 'obrigado', component: TemplateThanksComponent }
+  //   ],
+  // }
 ];
 
 @NgModule({

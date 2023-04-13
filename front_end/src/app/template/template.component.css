@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+html,body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.sg-footer {
+    background: #323533;
+    width: 100%;
+    margin-bottom: auto 10px solid #323533;
+    bottom: 0;
+    min-height: 10vh;
+}
+
+.sg-address {
+    color: #D9D9D9;
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.sg-icon {
+    background: #000000;
+    width: 37px;
+    height: 35px;
+    margin: 10px 10px;
+    border-radius: 7px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#facebook:hover {
+    background: #3b5998;
+}
+
+#instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+#youtube:hover {
+    background: #FF0000;
+}
+
+#site:hover {
+    background: #EDA900;
+}
+.sg-icons-row{
+    justify-content: end;
+}
+@media screen and (max-width: 770px) {
+    .sg-footer{
+        padding-bottom: 30px;
+    }
+    .sg-icons-row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .left-container{
+        margin: 10px;
+    }
+
+    #body {
+        margin-bottom: 5rem;
+    }
+}
