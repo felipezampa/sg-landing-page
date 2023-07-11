@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxMaskModule,} from 'ngx-mask';
+import { NgxMaskModule} from 'ngx-mask';
 
 @NgModule({
   declarations: [
