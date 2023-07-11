@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#main-div{
+    margin-top: 5rem;
+}
+h1 {
+    font-family: 'Bebas Neue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 59px;
+    color: #54A633;
+}
+h2 {
+    margin-top: 2rem;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000000;
+}
+img{
+    width: 30rem;
+}
+#safegold-bi{
+    margin-top: 2rem;
+    width: 50%;
+    background: #54A633;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    border: none;
+    padding: 7px 28px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#safegold-bi:hover{
+    background: #192517;
+}
+
+@media screen and (max-width: 991px) {
+    #right{
+        order: 0;
+    }
+    #left{
+        order: 1;
+        margin-top: 3rem;
+    }
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 45px;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0;
+    }
+
+    img {   
+        width: 300px;
+        margin: auto;
+    }
+    #main-div{
+        margin-top: 9rem;
+    }
+
+    #safegold-bi{
+        width: 15rem;
+        padding: 5px 13px;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .sg-fundo-verde-mobile {
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        height: 22.5rem;
+        width: 15rem;
+        background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+        border-radius: 0px 0px 0px 100px;
+    }
+    .move-img {
+        animation: none;
+    }
+    .digitar-animacao{
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* img{
+        padding
+    } */
+
+}
+@media screen and (max-width: 420px) {
+    .sg-fundo-verde-mobile {
+        height: 19.5rem;
+        width: 12rem;
+    }
+    #main-div{
+        margin-top: 4rem;
+    }
+
+}
+
+@keyframes move-img {
+    0% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.move-img {
+    animation: move 2s ease-in-out forwards;
+}

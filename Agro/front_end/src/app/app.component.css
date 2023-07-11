@@ -1,0 +1,18 @@
+img {
+    width: 12rem;
+    margin-top: 41px;
+}
+
+@media screen and (max-width: 991px) {
+    img {
+        width: 9rem;
+        margin: 2rem 0 0 5.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        width: 9rem;
+        margin: 2rem 0 0 0;
+    }
+}
