@@ -1,106 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
-html,
-body {
-    margin: 0;
-    height: 100%;
+#main-div{
+    margin-top: 5rem;
 }
-
 h1 {
-    font-family: 'Inter';
+    font-family: 'Inter',sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 59px;
+    color: #EDA900;
 }
-
 h2 {
     margin-top: 2rem;
-    font-family: 'Inter';
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000000;
+}
+img{
+    width: 30rem;
+}
+#safegold{
+    margin-top: 2rem;
+    width: 50%;
+    background: #EDA900;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    border: none;
+    padding: 7px 28px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
-    line-height: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#safegold:hover{
+    background: #414442;
 }
 
-p {
-    margin-top: 2rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
-}
-
-#body {
-    padding-bottom: 17rem
-}
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 991px) {
+    #right{
+        order: 0;
+    }
+    #left{
+        order: 1;
+        margin-top: 3rem;
+    }
     h1 {
         text-align: center;
-        font-size: 23px;
+        font-size: 34px;
+        line-height: 45px;
+        text-shadow: 1px 1px 2px #fff;
     }
 
     h2 {
         text-align: center;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0;
     }
 
-    p {
-        text-align: justify;
-        font-size: 12px;
-        line-height: 15px;
+    img {   
+        width: 300px;
+        margin: auto;
+    }
+    #main-div{
+        margin-top: 9rem;
     }
 
-    img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .left-container{
-        margin: 10px;
+    #safegold-bi{
+        width: 15rem;
+        padding: 5px 13px;
+        font-size: 14px;
+        margin-top: 1rem;
     }
 
-    #body {
-        padding-bottom: 0rem;
+    .sg-fundo-verde-mobile {
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        height: 22.5rem;
+        width: 15rem;
+        background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+        border-radius: 0px 0px 0px 100px;
+    }
+    .move-img {
+        animation: none;
+    }
+    .digitar-animacao{
+        animation-name: fadeIn;
+        animation-duration: 2s;
     }
 }
+@media screen and (max-width: 767px) {
+    /* img{
+        padding
+    } */
 
-@media screen and (max-height: 800px) {
-    #body {
-        padding-bottom: 10rem;
-    }
 }
-
-@media screen and (max-height: 850px) {
-    #body {
-        padding-bottom: 10rem;
+@media screen and (max-width: 420px) {
+    .sg-fundo-verde-mobile {
+        height: 19.5rem;
+        width: 12rem;
     }
-}
-
-@media screen and (max-height: 750px) {
-    #body {
-        padding-bottom: 3rem;
+    #main-div{
+        margin-top: 4rem;
     }
-}
 
-@media screen and (max-height: 650px) {
-    #body {
-        padding-bottom: 0rem;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #body {
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (min-widht: 1000px) {
-    #body {
-        padding-bottom: 10rem;
-    }
 }

@@ -1,12 +1,14 @@
-<div class="row justify-content-center">
-  <div class="col-lg-5 col-sm-12" id="filine-ficol">
-    <img src="../assets/img/mockup.svg" alt="">
-    <h1>GUIA ESSENCIAL DE</h1>
-    <h1>FORMAÇÃO DE PREÇO</h1>
+<div class="row justify-content-center" id="landing-page">
+  <div class="col-lg-6 col-sm-12" id="coluna-esquerda">
+    <img src="../assets/img/mockup.svg" alt="Guia Essencial">
+    <div class="my-4">
+      <h1>GUIA ESSENCIAL DE</h1>
+      <h1>FORMAÇÃO DE PREÇO</h1>
+    </div>
     <p>Potencialize seus lucros com segurança! </p>
     <p> Descubra os segredos da formação de preços no nosso e-book imperdível. Inscreva-se pelo formulário ao lado e baixe agora mesmo.</p>
   </div>
-  <div class="col-lg-5 col-sm-12 d-flex justify-content-center" id="filine-thcol">
+  <div class="col-lg-6 col-sm-12 d-flex justify-content-center" id="coluna-direita">
     <div class="sg-form">
       <form #formContato="ngForm">
         <h2 class="text-center">Inscreva-se agora mesmo para receber!</h2>
@@ -45,15 +47,7 @@
             </option>
           </select>
         </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="sg-check-label" for="flexCheckDefault">
-            Quero receber as novidades e promoções da Safegold.Clicando em aceito, você concorda com a
-            <a onclick="privacidade()" class="sg-privacy">política de privacidade</a> da
-            Safegold*.
-          </label>
-        </div>
-        <button type="submit" class="sg-button mt-3" (click)="SalvarForm(formContato.value)"
+        <button type="submit" class="sg-button" (click)="SalvarForm(formContato.value)"
           [disabled]="!formContato.valid">Baixar
           Agora!</button>
       </form>

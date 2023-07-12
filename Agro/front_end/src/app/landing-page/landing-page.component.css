@@ -10,11 +10,9 @@
     padding-right: 6%;
     padding-left: 6%;
     padding-top: 6%;
-    /* margin-right: 17%; */
     margin-bottom: 3rem;
     justify-content: end;
     left: 0;
-    /* position: absolute; */
 }
 
 .sg-fundo-verde {
@@ -100,7 +98,7 @@ select {
 }
 
 label {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 
