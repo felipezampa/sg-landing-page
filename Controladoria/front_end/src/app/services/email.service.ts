@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { Contato } from '../models/contato.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { APP_CONFIG } from '../APP_CONFIG';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
 
-  private baseURL = 'http://localhost:8000/landing_page/';
+  private baseURL = APP_CONFIG.baseURL;
   httpHeaders = new HttpHeaders({ 'Content-Type': 'application' });
 
   constructor(private http: HttpClient) { }

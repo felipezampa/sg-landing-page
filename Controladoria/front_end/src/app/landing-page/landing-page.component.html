@@ -1,48 +1,50 @@
-<div class="row justify-content-center" id="landing-page">
+<div class="row justify-content-center" id="main-div">
   <div class="col-lg-6 col-sm-12" id="coluna-esquerda">
-    <img src="../assets/img/mockup.svg" alt="Guia Essencial">
-    <div class="my-4">
-      <h1>GUIA ESSENCIAL DE</h1>
-      <h1>FORMAÇÃO DE PREÇO</h1>
+    <img src="{{imageURL}}/mockup.svg" alt="Guia Essencial" class="fade-in">
+    <div id="sg-info-text">
+      <div>
+        <h1 class="digitar-animacao">GUIA ESSENCIAL DE</h1>
+        <h1 class="digitar-animacao">FORMAÇÃO DE PREÇO</h1>
+      </div>
+      <p>Potencialize seus lucros com segurança! </p>
+      <p> Descubra os segredos da formação de preços no nosso e-book imperdível. Inscreva-se pelo formulário ao lado e baixe agora mesmo.</p>
     </div>
-    <p>Potencialize seus lucros com segurança! </p>
-    <p> Descubra os segredos da formação de preços no nosso e-book imperdível. Inscreva-se pelo formulário ao lado e baixe agora mesmo.</p>
   </div>
   <div class="col-lg-6 col-sm-12 d-flex justify-content-center" id="coluna-direita">
-    <div class="sg-form">
+    <div class="sg-form fade-in">
       <form #formContato="ngForm">
-        <h2 class="text-center">Inscreva-se agora mesmo para receber!</h2>
-        <div class="form-group mt-4">
+        <h2>Inscreva-se agora mesmo para receber!</h2>
+        <div class="form-group mt-3">
           <label for="email">E-mail*</label>
-          <input type="email" class="form-control" name="email" id="inputFocus" placeholder="email@exemplo.com" ngModel
+          <input type="email" class="sg-input" name="email" id="inputFocus" placeholder="email@exemplo.com" ngModel
             required>
         </div>
-        <div class="form-group mt-4">
+        <div class="form-group mt-3">
           <label for="nome">Seu nome*</label>
-          <input type="text" class="form-control" name="nome" placeholder="Nome Completo" ngModel required>
+          <input type="text" class="sg-input" name="nome" placeholder="Nome Completo" ngModel required>
         </div>
-        <div class="form-group mt-4">
+        <div class="form-group mt-3">
           <label for="telefone">Seu telefone*</label>
-          <input type="text" class="form-control" name="telefone" placeholder="(00) 0 0000-0000"
+          <input type="text" class="sg-input" name="telefone" placeholder="(00) 0 0000-0000"
             mask="(00) 0000-0000 || (00) 0 0000-0000" ngModel required>
         </div>
-        <div class="form-group mt-4">
+        <div class="form-group mt-3">
           <label for="cargo">Seu cargo*</label>
-          <select class="form-select" name="cargo" ngModel required>
+          <select class="sg-select" name="cargo" ngModel required>
             <option *ngFor="let cargo of CargoChoices" [value]="cargo">{{ cargo }}
             </option>
           </select>
         </div>
-        <div class="form-group mt-4">
+        <div class="form-group mt-3">
           <label for="segmento_empresa">Qual é o segmento da sua empresa?*</label>
-          <select class="form-select" name="segmento" ngModel required>
+          <select class="sg-select" name="segmento" ngModel required>
             <option *ngFor="let segmento of SegmentoChoices" [value]="segmento">{{ segmento }}
             </option>
           </select>
         </div>
-        <div class="form-group mt-4">
+        <div class="form-group mt-3">
           <label for="faturamento">Faixa de faturamento*</label>
-          <select class="form-select" name="faturamento" ngModel required>
+          <select class="sg-select" name="faturamento" ngModel required>
             <option *ngFor="let faturamento of FaturamentoChoices" [value]="faturamento">{{ faturamento }}
             </option>
           </select>

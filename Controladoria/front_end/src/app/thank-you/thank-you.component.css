@@ -1,121 +1,118 @@
+/* -------------------------------------------  MAIN  ------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
-#main-div{
-    margin-top: 5rem;
+#main-div {
+  margin-bottom: 3rem;
+  font-family: 'Inter', sans-serif;
+  --header-color: #EDA900;
+  --btn-bg: #414442;
+  --btn-cor: #ffffff;
 }
+
+/* -------------------------------------------  CLASS ------------------------------------------- */
+.sg-btn {
+  margin-top: 2rem;
+  width: 16rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  padding: .8rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+  text-decoration: none;
+  background: var(--btn-bg);
+  color: var(--btn-cor);
+}
+
+.sg-btn:hover {
+  background: var(--header-color);
+}
+
+.sg-btn-group {
+  margin-top: 3rem;
+}
+
+/* -------------------------------------------   TAG  ------------------------------------------- */
 h1 {
-    font-family: 'Inter',sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2.3rem;
-    line-height: 59px;
-    color: #EDA900;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.3rem;
+  line-height: 59px;
+  color: var(--header-color);
 }
+
 h2 {
-    margin-top: 2rem;
-    font-family: 'Inter',sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 23px;
-    line-height: 28px;
-    color: #000000;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 28px;
 }
-img{
-    width: 30rem;
+
+img {
+  height: 40rem;
 }
-#safegold{
-    margin-top: 2rem;
-    width: 50%;
-    background: #EDA900;
-    color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    border: none;
-    padding: 7px 28px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.6s;
-    text-decoration: none;
+
+i {
+  margin: auto .5rem;
 }
-#safegold:hover{
-    background: #414442;
+
+/* -------------------------------------------  MEDIA ------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  img {
+    height: 30rem;
+  }
+
+  .sg-btn {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    #right{
-        order: 0;
-    }
-    #left{
-        order: 1;
-        margin-top: 3rem;
-    }
-    h1 {
-        text-align: center;
-        font-size: 34px;
-        line-height: 45px;
-        text-shadow: 1px 1px 2px #fff;
-    }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
 
-    h2 {
-        text-align: center;
-        font-size: 11px;
-        line-height: 16px;
-        margin: 0;
-    }
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-top: 0;
+  }
 
-    img {   
-        width: 300px;
-        margin: auto;
-    }
-    #main-div{
-        margin-top: 9rem;
-    }
+  img {
+    height: 20rem;
+    margin: auto;
+  }
 
-    #safegold-bi{
-        width: 15rem;
-        padding: 5px 13px;
-        font-size: 14px;
-        margin-top: 1rem;
-    }
+  #right {
+    order: 0;
+  }
 
-    .sg-fundo-verde-mobile {
-        top: 0;
-        right: 0;
-        position: fixed;
-        z-index: -1;
-        height: 22.5rem;
-        width: 15rem;
-        background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
-        border-radius: 0px 0px 0px 100px;
-    }
-    .move-img {
-        animation: none;
-    }
-    .digitar-animacao{
-        animation-name: fadeIn;
-        animation-duration: 2s;
-    }
-}
-@media screen and (max-width: 767px) {
-    /* img{
-        padding
-    } */
+  #left {
+    order: 1;
+    margin-top: 2rem;
+  }
 
-}
-@media screen and (max-width: 420px) {
-    .sg-fundo-verde-mobile {
-        height: 19.5rem;
-        width: 12rem;
-    }
-    #main-div{
-        margin-top: 4rem;
-    }
+  #main-div {
+    margin-top: 1rem;
+  }
 
+  .sg-btn {
+    width: 15rem;
+    padding: 1rem .8rem;
+  }
+
+  .sg-btn-group {
+    margin-top: 1.3rem;
+  }
 }

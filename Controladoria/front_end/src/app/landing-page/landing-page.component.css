@@ -1,8 +1,12 @@
 /* -------------------------------------------  MAIN  ------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-#landing-page {
+#main-div {
   margin-bottom: 5rem;
+  font-family: 'Inter', sans-serif;
+  --primary-color: #EDA900;
+  --secondary-color: #414442;
+  --disabled-color: #EDA90091;
 }
 
 /* -------------------------------------------   ID   ------------------------------------------- */
@@ -10,14 +14,21 @@
   margin-top: 1rem;
 }
 
+#sg-info-text {
+  padding: 2rem 1rem;
+}
+
+#sg-info-text div {
+  margin-bottom: 2rem;
+}
+
 /* -------------------------------------------  CLASS ------------------------------------------- */
 .sg-button {
-  background: #EDA900;
+  background: var(--primary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   border: none;
   padding: 7px 28px;
-  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -27,15 +38,15 @@
   align-items: center;
   justify-content: center;
   transition: 0.6s;
-  margin-top: 2.7rem;
+  margin-top: 2.3rem;
 }
 
 .sg-button:hover {
-  background: #414442;
+  background: var(--secondary-color);
 }
 
 .sg-button:disabled {
-  background: #edaa0091;
+  background: var(--disabled-color);
 }
 
 .sg-form {
@@ -44,21 +55,55 @@
   background: #D9D9D9;
   box-shadow: 16px 18px 20px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
-  padding: 1.4rem;
+  padding: 2rem;
   justify-content: end;
+}
+
+.sg-select {
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 2px solid white;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: .35rem .8rem;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.sg-select:focus,
+.sg-select:active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.sg-input {
+  border: none;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid white;
+  outline: none;
+  transition: 0.6s;
+  padding: .35rem .8rem;
+  border-radius: 10px;
+}
+
+.sg-input[type=text]:focus,
+.sg-input[type=text]:active,
+.sg-input[type=email]:focus,
+.sg-input[type=email]:active {
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* -------------------------------------------   TAG  ------------------------------------------- */
 h1 {
-  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 800;
   font-size: 2.2rem;
-  line-height: 2.65rem;
-  color: #EDA900;
+  line-height: 2.35rem;
+  color: var(--primary-color);
 }
 
 h2 {
-  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.125rem;
@@ -67,22 +112,24 @@ h2 {
 }
 
 p {
-  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.125rem;
   text-align: justify;
 }
 
-input,
-select {
-  border-radius: 10px;
-}
-
 img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: left;
 }
 
 /* -------------------------------------------  MEDIA ------------------------------------------- */
@@ -97,8 +144,26 @@ img {
     transform: rotate(-0.01turn);
   }
 
-  .sg-form {
-    width: 360px;
+  #sg-info-text {
+    padding: 2rem 1rem;
   }
 
+  .sg-form {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  p {
+    font-size: .95rem;
+  }
+
+  #sg-info-text {
+    padding: 1.2rem;
+  }
 }

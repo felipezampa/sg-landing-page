@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Contato } from '../models/contato.model';
 import { EmailService } from '../services/email.service';
 import { NgForm } from '@angular/forms';
+import { APP_CONFIG } from '../APP_CONFIG';
 
 @Component({
   selector: 'app-landing-page',
@@ -11,6 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class LandingPageComponent implements OnInit {
 
+  imageURL = APP_CONFIG.imageURL
   @ViewChild('formContato') formContato!: NgForm;
   @ViewChild('name', { static: true }) inputFocus!: ElementRef;
   SegmentoChoices: String[] = ['Comércio', 'Indústria', 'Serviços'];
@@ -22,14 +24,9 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void { }
 
   SalvarForm(value: Contato) {
+    value.landing_origem = 'Controladoria - GUIA ESSENCIAL DE FORMAÇÃO DE PREÇO'
     this.emailService.create(value).subscribe();
     this.router.navigate(['/obrigado']);
   }
 
-  FocusForm() {
-    var meuInput = document.getElementById("inputFocus");
-    meuInput?.focus();
-  }
-  privacidade(){
-  }
 }

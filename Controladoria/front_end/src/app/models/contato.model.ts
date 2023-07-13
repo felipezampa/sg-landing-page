@@ -5,4 +5,5 @@ export interface Contato {
     cargo: string;
     segmento_empresa: string;
     faturamento: string;
+    landing_origem: string;
 }

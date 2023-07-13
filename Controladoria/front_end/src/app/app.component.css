@@ -1,0 +1,14 @@
+.sg-logo{
+  height: 75;
+}
+
+@media screen and (max-width: 1200px) {
+  .sg-logo{
+    max-height: 10%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .sg-logo{
+    height: 55;
+  }
+}
