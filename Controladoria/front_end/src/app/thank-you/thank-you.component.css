@@ -115,4 +115,8 @@ i {
   .sg-btn-group {
     margin-top: 1.3rem;
   }
+
+  .fade-in {
+    animation: none;
+  }
 }

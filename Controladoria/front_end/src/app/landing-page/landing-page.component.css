@@ -163,7 +163,22 @@ label {
     font-size: .95rem;
   }
 
+  #coluna-esquerda {
+    justify-content: center;
+  }
+
   #sg-info-text {
     padding: 1.2rem;
+  }
+
+  .fade-in {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .digitar-animacao {
+    animation: none;
+    font-size: 1.1rem;
   }
 }
