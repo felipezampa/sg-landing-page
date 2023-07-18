@@ -1,0 +1,123 @@
+/* -------------------------------------------  MAIN  ------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+#main-div {
+  margin-bottom: 3rem;
+  font-family: 'Inter', sans-serif;
+  --header-color: #EDA900;
+  --btn-bg: #414442;
+  --btn-cor: #ffffff;
+}
+
+/* -------------------------------------------  CLASS ------------------------------------------- */
+.sg-btn {
+  margin-top: 2rem;
+  width: 16rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  padding: .8rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+  text-decoration: none;
+  background: var(--btn-bg);
+  color: var(--btn-cor);
+}
+
+.sg-btn:hover {
+  background: var(--header-color);
+}
+
+.sg-btn-group {
+  margin-top: 3rem;
+}
+
+/* -------------------------------------------   TAG  ------------------------------------------- */
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.3rem;
+  line-height: 59px;
+  color: var(--header-color);
+}
+
+h2 {
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+img {
+  height: 40rem;
+}
+
+i {
+  margin: auto .5rem;
+}
+
+/* -------------------------------------------  MEDIA ------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  img {
+    height: 30rem;
+  }
+
+  .sg-btn {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-top: 0;
+  }
+
+  img {
+    height: 20rem;
+    margin: auto;
+  }
+
+  #right {
+    order: 0;
+  }
+
+  #left {
+    order: 1;
+    margin-top: 2rem;
+  }
+
+  #main-div {
+    margin-top: 1rem;
+  }
+
+  .sg-btn {
+    width: 15rem;
+    padding: 1rem .8rem;
+  }
+
+  .sg-btn-group {
+    margin-top: 1.3rem;
+  }
+
+  .fade-in,
+  .move {
+    animation: none;
+  }
+}
